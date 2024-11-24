@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cruds.css">
+    <title>Cruds</title>
+</head>
+<body>
+  <div class="cruds">
+<div class="head">
+  <h2>Cruds</h2>
+  <p>Product Management System</p>
+</div>
+<div class="inputs">
+<input placeholder="Title" type="text" id="title">
+<div class="calculator">
+  <input placeholder="Price" type="number"id="price">
+  <input placeholder="Taxes" type="number"id="taxes">
+  <input placeholder="Ads" type="number"id="ads">
+  <input placeholder="Discount" type="number"id="discount">
+  <span id="total"></span>
+</div>
+  <input placeholder="Category" type="text" id="category">
+  <input placeholder="Count" type="number" id="count">
+  <button id="create">Create</button>
+</div>
+<div class="outputs">
+  <input placeholder="Search" type="text" id="search">
+<div class="buttons">
+  <button id="search-title">Search By Title</button>
+  <button id="search-category">Search By Category</button>
+</div>
+<div>
+<div id="table">
+<table>
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Taxes</th>
+    <th>Ads</th>
+    <th>Discount</th>
+    <th>Total</th>
+    <th>Category</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+  <tbody id="tbody"></tbody>
+</table>
+</div>
+</div>
+  </div>
+  <script src="cruds.js"></script>
+</body>
+</html>

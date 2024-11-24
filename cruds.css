@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: #000000db;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.cruds{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.cruds .head {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 25px 0;
+}
+
+.cruds input {
+    background-color: #161313b5;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.cruds input:focus{
+    background-color: black;
+}
+
+.cruds input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.cruds button {
+    cursor: pointer;
+    background-color: #868c8ff0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.cruds button:hover{
+    background-color: #5d6163;
+}
+.cruds .inputs #create:hover,
+.cruds .outputs > div #search-title:hover,
+.cruds .outputs .delete-all:hover,
+.cruds .outputs > div #search-category:hover{
+    letter-spacing: 1px;
+}
+
+.cruds .inputs input[type="number"]::-webkit-inner-spin-button{
+    appearance: none;
+    }
+    .cruds .inputs input[type="number"] {
+        width: 20%;
+        margin:0 10px 20px 0;
+        padding: 15px;
+    }
+
+
+.cruds h2{
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+.cruds p{
+   letter-spacing: 2px;
+}
+
+@media (max-width: 767px){
+    .cruds .inputs .calculator {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+@media (max-width: 767px){
+    .cruds .inputs .calculator input {
+        width: 100%;  
+    }
+}
+@media (max-width: 1023px){
+    .cruds .inputs .calculator #total {
+        display: block;
+        margin-bottom: 20px; 
+    }
+}
+
+.inputs #total{
+     background-color: red;
+     padding: 12px 8px;
+     border-bottom: 1px solid white;
+     font-weight: bold;
+     border-radius:4px ;
+     -webkit-border-radius:4px ;
+     -moz-border-radius:4px ;
+     -ms-border-radius:4px ;
+     -o-border-radius:4px ;
+}
+
+.inputs #total::before{
+content: "Total : ";
+}
+
+@media (max-width: 767px){
+    .cruds .outputs .buttons {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.cruds .outputs > div {
+    display: flex;
+    gap: 100px;
+}
+
+.inputs #title,
+.inputs #category,
+.inputs #count,
+.inputs #create, 
+.cruds .outputs #search,
+.cruds .inputs #create,
+.cruds .outputs > div #search-title,
+.cruds .outputs > div #search-category,
+.cruds .outputs .delete-all {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.cruds button {
+    border: none;
+    outline: none;
+}
+
+.cruds #table {
+    width: 100%;
+  overflow-x: auto;
+}
+.cruds table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #868c8ff0;
+}
+.cruds table td,
+.cruds table th {
+    padding: 15px;
+}
+
+.cruds table tbody button {
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #5d6163;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.cruds table tbody button:hover{
+    background-color: #000000db;
+}
+
+
+
+
+
+
+
+
+
